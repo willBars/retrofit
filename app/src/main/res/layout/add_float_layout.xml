@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#bebcbc"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_key"
+            android:background="@drawable/text_shape"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="输入key"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入key对应的value值"
+                android:textColor="#000000"/>
+            <!--<ImageButton
+                android:id="@+id/get_history_username"
+                android:src="@drawable/xy_history_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>-->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

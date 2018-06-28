@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="cn.xy.unittext.MainActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试前：请先设置参数，然后再进行接口的测试，检查网络时，不需要设置参数"
+        android:textColor="#f50707"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/text_Internet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="检查网络"/>
+        <Button
+            android:id="@+id/save_params"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="保存参数"/>
+
+        <Button
+            android:id="@+id/active_equipment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="激活设备"/>
+
+        <Button
+            android:id="@+id/login_game"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="登录设备"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/sum_llyout_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/key_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#aba331"
+                    android:gravity="center_horizontal"
+                    android:text="KEY"
+                    android:textColor="#0e0e0e"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="#31ab43"
+                    android:gravity="center_horizontal"
+                    android:text="Value"
+                    android:textColor="#0e0e0e"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="3dp"
+                 android:background="#bebcbc"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:background="@drawable/text_shape"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center_vertical"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:text="IpAddress"
+                     android:textColor="#000000"/>
+
+                 <LinearLayout
+                     android:id="@+id/display_popView_local"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="3"
+                     android:orientation="horizontal">
+
+                     <EditText
+                         android:id="@+id/input_url"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:background="@null"
+                         android:hint="输入请求url"
+                         android:inputType="textUri"
+                         android:textColor="#000000"/>
+
+                     <ImageButton
+                         android:id="@+id/get_history_ip"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/xy_history_down"/>
+                 </LinearLayout>
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="3dp"
+                 android:background="#bebcbc"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:background="@drawable/text_shape"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center_vertical"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:text="User_name"
+                     android:textColor="#000000"/>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="3"
+                     android:orientation="horizontal">
+
+                     <EditText
+                         android:id="@+id/input_username"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:background="@null"
+                         android:hint="输入用户名"
+                         android:inputType="textUri"
+                         android:textColor="#000000"/>
+                     <!--<ImageButton
+                         android:id="@+id/get_history_username"
+                         android:src="@drawable/xy_history_down"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"/>-->
+                 </LinearLayout>
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/llyout_User_psw"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="3dp"
+                 android:background="#bebcbc"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:background="@drawable/text_shape"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center_vertical"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:text="User_psw"
+                     android:textColor="#000000"/>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="3"
+                     android:orientation="horizontal">
+
+                     <EditText
+                         android:id="@+id/input_password"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:background="@null"
+                         android:hint="输入用户名密码"
+                         android:inputType="textUri"
+                         android:textColor="#000000"/>
+                     <!-- <ImageButton
+                          android:id="@+id/get_history_password"
+                          android:src="@drawable/xy_history_down"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>-->
+                 </LinearLayout>
+             </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:id="@+id/add_item_view"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_view"
+        android:layout_margin="16dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="#331833a4"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>
